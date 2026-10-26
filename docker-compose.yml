@@ -1,0 +1,8 @@
+services:
+  varianta:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./varianta.duckdb:/app/varianta.duckdb
